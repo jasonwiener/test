@@ -1,0 +1,56 @@
+[
+    {
+        "data": {
+            "type": "variable",
+            "step": "var: username",
+            "var": "username",
+            "val": "<empty>",
+            "maxpaths": 1,
+            "uuid": "e0e62199eaa4fab69a6349204dea11d5",
+            "height": 32,
+            "width": 120,
+            "x": 250,
+            "y": 50
+        },
+        "paths": [
+            "306801f80240a1b3c7ea30790e669fae"
+        ]
+    },
+    {
+        "data": {
+            "type": "variable",
+            "step": "var: password",
+            "var": "password",
+            "val": "<empty>",
+            "maxpaths": 1,
+            "uuid": "306801f80240a1b3c7ea30790e669fae",
+            "height": 32,
+            "width": 120,
+            "x": 250,
+            "y": 130
+        },
+        "paths": [
+            "3daaebb5d4109f02e5cbf051ea4bbd94"
+        ]
+    },
+    {
+        "data": {
+            "type": "plugin",
+            "step": "Call Plugin",
+            "plugin": "[\"Users\",\"d855e3dc74a5104ac0ef348188938426d9b7870149443b62176384e0\"]",
+            "action": "get|checkUsernameAndPassword|authenticate",
+            "args": {
+                "id": "{\"~\":\"username\"}",
+                "password": "{\"~\":\"password\"}"
+            },
+            "data_to_var": "validuser",
+            "maxpaths": 1,
+            "uuid": "3daaebb5d4109f02e5cbf051ea4bbd94",
+            "x": 230,
+            "y": 220,
+            "width": 160,
+            "height": 100
+        },
+        "paths": []
+    }
+]
